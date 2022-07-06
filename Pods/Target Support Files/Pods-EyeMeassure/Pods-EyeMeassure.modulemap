@@ -1,0 +1,6 @@
+framework module Pods_EyeMeassure {
+  umbrella header "Pods-EyeMeassure-umbrella.h"
+
+  export *
+  module * { export * }
+}

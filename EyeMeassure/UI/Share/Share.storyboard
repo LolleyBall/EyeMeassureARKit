@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Share View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ShareView" id="Y6W-OH-hqX" customClass="ShareViewController" customModule="EyeMeassure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nrC-wL-uSh">
+                                <rect key="frame" x="0.0" y="79" width="414" height="683"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Keh-Sr-MZr">
+                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="glL-wf-MUO">
+                                        <rect key="frame" x="20" y="10" width="374" height="80"/>
+                                        <subviews>
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rey-nc-gvq" customClass="ImageWithTextView" customModule="EyeMeassure" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DhF-51-eQj" customClass="ImageWithTextView" customModule="EyeMeassure" customModuleProvider="target">
+                                                <rect key="frame" x="131.5" y="0.0" width="111" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fV-ji-aaD" customClass="ImageWithTextView" customModule="EyeMeassure" customModuleProvider="target">
+                                                <rect key="frame" x="262.5" y="0.0" width="111.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="glL-wf-MUO" firstAttribute="leading" secondItem="Keh-Sr-MZr" secondAttribute="leading" constant="20" id="5Xo-w9-8Ih"/>
+                                    <constraint firstItem="glL-wf-MUO" firstAttribute="top" secondItem="Keh-Sr-MZr" secondAttribute="top" constant="10" id="D7N-bG-KAn"/>
+                                    <constraint firstAttribute="bottom" secondItem="glL-wf-MUO" secondAttribute="bottom" constant="10" id="Wpk-Lf-NQk"/>
+                                    <constraint firstAttribute="trailing" secondItem="glL-wf-MUO" secondAttribute="trailing" constant="20" id="e2J-Af-f40"/>
+                                    <constraint firstAttribute="height" constant="100" id="xn3-50-2mY"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kde-ib-pEy">
+                                <rect key="frame" x="10" y="44" width="17.5" height="25"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nrC-wL-uSh" firstAttribute="top" secondItem="kde-ib-pEy" secondAttribute="bottom" constant="10" id="CzM-fX-cuT"/>
+                            <constraint firstItem="Keh-Sr-MZr" firstAttribute="top" secondItem="nrC-wL-uSh" secondAttribute="bottom" id="ZwY-Xm-nbt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nrC-wL-uSh" secondAttribute="trailing" id="bYw-VB-LtC"/>
+                            <constraint firstItem="kde-ib-pEy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="eqs-FP-wX9"/>
+                            <constraint firstItem="Keh-Sr-MZr" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="ew7-bF-CKV"/>
+                            <constraint firstItem="nrC-wL-uSh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jyY-ME-HMe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Keh-Sr-MZr" secondAttribute="trailing" id="ppu-Lz-DXS"/>
+                            <constraint firstItem="kde-ib-pEy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="xfO-Ff-f64"/>
+                            <constraint firstItem="Keh-Sr-MZr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zBw-Ts-sKQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="kde-ib-pEy" id="Gsg-eE-Zub"/>
+                        <outlet property="photoImageView" destination="nrC-wL-uSh" id="dMO-I0-yla"/>
+                        <outlet property="shareOptionsStackView" destination="glL-wf-MUO" id="0bk-YW-UJR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

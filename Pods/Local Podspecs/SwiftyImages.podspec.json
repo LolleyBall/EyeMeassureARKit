@@ -1,0 +1,27 @@
+{
+  "name": "SwiftyImages",
+  "platforms": {
+    "ios": "9.3"
+  },
+  "summary": "A set of efficient extensions and classes for manipulating images and colors.",
+  "requires_arc": true,
+  "version": "1.0.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Nyx0uf": "benjgodard@me.com"
+  },
+  "homepage": "https://github.com/Nyx0uf/SwiftyImages",
+  "source": {
+    "git": "https://github.com/Nyx0uf/SwiftyImages.git",
+    "tag": "1.0.0"
+  },
+  "frameworks": [
+    "UIKit",
+    "ImageIO",
+    "MobileCoreServices"
+  ],
+  "source_files": "src/**/*.{swift,h}"
+}

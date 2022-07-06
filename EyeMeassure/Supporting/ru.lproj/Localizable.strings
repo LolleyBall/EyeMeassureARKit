@@ -1,0 +1,9 @@
+"unableCameraTitle"="Камера не доступна";
+"unableCameraMessage"="Разблокируйте в настройках";
+
+"auth.badName"="Имя не может быть пустым";
+"auth.badAdress"="Адресс не может быть пустым";
+"auth.badEmail"="Неправильный адресс эл. почты";
+"auth.badPhone"="Неправильный номер телефона";
+"auth.badPassword"="Неправильный пароль";
+"auth.badConfirmPassword"="Неправильное подтверждение пароля";

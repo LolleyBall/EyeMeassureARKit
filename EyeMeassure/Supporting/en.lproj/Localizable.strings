@@ -1,0 +1,9 @@
+"unableCameraTitle"="Unable to access the Camera";
+"unableCameraMessage"="Please unable in Settings";
+
+"auth.badName"="Name should be not empty";
+"auth.badAdress"="Adress should be not empty";
+"auth.badEmail"="Incorrect Email";
+"auth.badPhone"="Incorrect phone number";
+"auth.badPassword"="Incorrect password";
+"auth.badConfirmPassword"="Incorrect password confirmation";
